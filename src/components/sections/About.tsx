@@ -4,7 +4,7 @@ import '../../styles/about.min.css'
 
 export default function About() {
   return (
-    <div className='section'>
+    <div id='about-section'>
       <div>
         <h2 className='title-section'>About</h2>
         <p>

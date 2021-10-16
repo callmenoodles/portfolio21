@@ -1,6 +1,9 @@
 import "../../styles/default.min.css"
 import "../../styles/footer.min.css"
 
+import iconGH from "../../res/social/github.jxl"
+import iconLI from "../../res/social/linkedin.jxl"
+
 export default function Contact() {
   return (
     <footer>
@@ -11,9 +14,9 @@ export default function Contact() {
         <li>Projects</li>
       </ul>
       <div>
-        GH
+        <img className="btn-social" src={iconGH} alt="GitHub" />
         <h3>Noodles</h3>
-        LI
+        <img className="btn-social" src={iconLI} alt="LinkedIn" />
       </div>
     </footer>
   )
