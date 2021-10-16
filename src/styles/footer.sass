@@ -1,0 +1,61 @@
+@import default
+  
+footer
+  width: 100vw
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  button
+    padding: 10px 20px
+    border: 2px solid $colorPrimary
+    background: none
+    border-radius: 8px
+    color: $colorPrimary
+    font-family: $fontPrimary
+    font-size: 1.25em
+    font-weight: 500
+    letter-spacing: 7px
+    text-transform: uppercase
+    text-align: center
+    transition: .2s
+
+    &:hover
+      color: white
+      border: 2px solid white
+      padding: 10px 25px
+      cursor: pointer
+      transition: .2s
+
+  ul
+    list-style-type: none
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 70px 0 40px 0
+    padding: 0
+    width: 600px
+
+    li
+      color: white
+      font-family: $fontPrimary
+      font-size: 1.2em
+      text-transform: uppercase
+      letter-spacing: 1px
+    
+      &:hover
+        color: $colorPrimary
+        cursor: pointer
+        transition: .2s
+  
+  div
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    color: white
+    padding: 20px
+
+    h3
+      margin: 0 50px
