@@ -10,17 +10,44 @@
   div
     display: flex
     flex-direction: row
-    width: 40%
+    width: 882px
 
-    h2
+    @media screen and ( max-width: $lg )
+      flex-direction: column
+      align-items: center
+      width: 60%
+
+    @media screen and ( max-width: $md )
+      flex-direction: column
+      align-items: center
+      width: 75%
+
+    div
       width: 50%
+      display: flex
+      flex-direction: column
+
+      @media screen and ( max-width: $lg )
+        width: 100%
+
+      h2 
+        margin-bottom: 6px
+
+      div
+        background-color: $colorPrimary
+        height: 1px
+        width: 100px
+        margin-bottom: 50px
 
     p
       color: white
       width: 50%
       font-size: 1.1em
-      letter-spacing: 3px
+      letter-spacing: 1px
       line-height: 30px
       text-align: justify
-      font-family: 'Open Sans'
+      font-family: $fontSecondary
   
+      @media screen and ( max-width: $lg )
+        width: 100%
+        

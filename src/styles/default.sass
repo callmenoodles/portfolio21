@@ -1,14 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap')
-  
+//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Yantramanav:wght@300;400;500&display=swap');
 $colorBackground: #000000
 $colorPrimary:    #F2AF00
 $colorSecondary:  #FFFFFF
-$fontPrimary: 'Oswald', sans-serif
+$fontPrimary: "Oswald", sans-serif
+$fontSecondary: "Hind Madurai", sans-serif
+
+$lg: 1100px
+$md: 700px
+$sm: 400px
   
 body
   background: $colorBackground
   margin: 0
   padding: 0
+
+::selection
+  background: $colorPrimary
+  color: $colorBackground
+
+::-moz-selection
+  background: $colorPrimary
+  color: $colorBackground
 
 .fullpage
   height: 100vh

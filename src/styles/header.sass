@@ -5,13 +5,15 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   
 .title
   color: white
   font-family: $fontPrimary
   text-align: center
   text-transform: uppercase
-  //font-size: 4.6em
   font-size: 6em
   margin: 10px 0 0 0
   font-weight: 500
@@ -19,6 +21,16 @@
   letter-spacing: 20px
   position: relative
   left: 5px
+
+  @media screen and ( max-width: $sm )
+    font-size: 3.5em
+    letter-spacing: 8px
+    line-height: 70px
+
+  @media screen and ( min-width: $sm ) and (max-width: $md)
+    font-size: 4em
+    letter-spacing: 10px
+    line-height: 80px
 
 .subtitle
   color: white
@@ -30,5 +42,22 @@
   margin: 0
   letter-spacing: 3px
   font-weight: 400
-  //font-size: 1em
   font-size: 1.3em
+
+  @media screen and ( max-width: $sm )
+    font-size: 0.8em
+    letter-spacing: 2px
+    position: relative
+    top: 8px
+
+  @media screen and ( min-width: $sm ) and (max-width: $md)
+    font-size: 0.9em
+    letter-spacing: 2px
+    position: relative
+    top: 10px
+
+#arrow
+  color: $colorPrimary
+  opacity: 1
+  position: absolute
+  bottom: 50px

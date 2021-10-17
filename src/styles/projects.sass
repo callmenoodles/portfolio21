@@ -8,7 +8,13 @@
   padding-bottom: 350px
 
   h2
-    margin-bottom: 50px
+    margin-bottom: 6px
+
+#projects-underline
+  background-color: $colorPrimary
+  height: 1px
+  width: 130px
+  margin-bottom: 50px
 
 a
   text-decoration: none
@@ -19,6 +25,12 @@ a
   flex-wrap: wrap
   flex-direction: row
   justify-content: left
+
+  @media screen and ( max-width: $lg )
+    width: 588px
+
+  @media screen and ( max-width: $md )
+    width: 294px
 
   .project
     width: 280px
@@ -56,12 +68,11 @@ a
         text-decoration: none
 
       p
-        font-family: "Open Sans"
+        font-family: $fontSecondary
+        font-size: 1.1em
         text-decoration: none
 
       &:hover
         transition: 200ms
         background-color: $colorBackground
-        opacity: 0.93
-
-
+        opacity: 0.95

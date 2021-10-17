@@ -48,6 +48,7 @@ export default function Projects() {
   return (
     <div id="section-projects">
       <h2 className="title-section">Projects</h2>
+      <div id="projects-underline"></div>
       <ProjectGroup>
         <Project 
           title="Mag Ik Dit Delen?"
@@ -81,7 +82,7 @@ export default function Projects() {
 
         <Project 
           title="Bioshufflr"
-          description="Instagram Biography Updater"
+          description="Instagram Bio Updater"
           thumbnail={thumbnail6}
           url="https://github.com/alex-lushiku/bioshufflr" />
       </ProjectGroup>
