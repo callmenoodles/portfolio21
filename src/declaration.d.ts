@@ -1,1 +1,1 @@
-declare module '*.jxl';
+declare module "*.jxl";

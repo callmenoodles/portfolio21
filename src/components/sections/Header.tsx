@@ -1,6 +1,6 @@
 import TextLoop from "react-text-loop"
-import '../../styles/default.min.css'
-import '../../styles/header.min.css'
+import "../../styles/default.min.css"
+import "../../styles/header.min.css"
 
 export default function Header() {
   return (

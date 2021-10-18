@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import HamburgerMenu from 'react-hamburger-menu'
-import { Link } from 'react-scroll';
-import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock';
+import { useState, useEffect } from "react";
+import HamburgerMenu from "react-hamburger-menu"
+import { Link } from "react-scroll";
+import { clearAllBodyScrollLocks, disableBodyScroll } from "body-scroll-lock";
 
-import logo from '../../res/logo.png';
+import logo from "../../res/logo.png";
 import "../../styles/default.min.css";
-import '../../styles/navbar.min.css';
+import "../../styles/navbar.min.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -21,7 +21,7 @@ export default function Navbar() {
   })
 
   return(
-    <div className='navbar'>
+    <div className="navbar">
       <div className="logo">
         <img src={logo} />
         <h1>NOODLES</h1>
@@ -40,14 +40,14 @@ export default function Navbar() {
         </ul>
       </nav>
       
-      <div className='hamburger'>
+      <div className="hamburger">
         <HamburgerMenu
           isOpen={open}
           menuClicked={() => setOpen(!open)}
           width={26}
           height={17}
           strokeWidth={2}
-          color='white'
+          color="white"
           borderRadius={10}
           animationDuration={0.5}              
         />

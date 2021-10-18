@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import "../../styles/default.min.css"
 import "../../styles/projects.min.css"
 
@@ -21,7 +21,7 @@ export function Project(props: ProjectProps) {
     <a href={props.url}>
       <div 
         className="project"
-        style={{backgroundImage: `url('${props.thumbnail}')`}}>
+        style={{backgroundImage: `url("${props.thumbnail}")`}}>
         
         <div className="overlay-project">
           <h3>{props.title}</h3>
